@@ -236,7 +236,7 @@ def cloudstack_request(conn_params, command, args):
     query += '&signature=' + urllib.quote_plus(signature)
     # print query
 
-    print "Request :", conn_params['api_url'] + '?' + query
+    # print "Request :", conn_params['api_url'] + '?' + query
 
     response = urllib2.urlopen(conn_params['api_url'] + '?' + query)
     # from IPython import embed; embed()
